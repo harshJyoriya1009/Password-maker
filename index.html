@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Maker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Maker</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-copy"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label for="length">Password Length</label>
+          <input
+            type="number"
+            name="length"
+            id="length"
+            min="4"
+            max="20"
+            value="10"
+          />
+        </div>
+        <div class="setting">
+          <label for="uppercase">Add uppercase letters</label>
+          <input type="checkbox" name="uppercase" id="uppercase" checked />
+        </div>
+        <div class="setting">
+          <label for="lowercase">Add lowercase letters</label>
+          <input type="checkbox" name="lowercase" id="lowercase" checked />
+        </div>
+        <div class="setting">
+          <label for="numbers">Add numbers</label>
+          <input type="checkbox" name="numbers" id="numbers" checked />
+        </div>
+        <div class="setting">
+          <label for="symbols">Add symbols</label>
+          <input type="checkbox" name="symbols" id="symbols" checked />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generate">--Enter--</button>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
