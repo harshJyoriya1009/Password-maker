@@ -60,7 +60,7 @@ generateElement.addEventListener("click", () => {
   const hasUpper = uppercaseElement.checked;
   const hasNumber = numbersElement.checked;
   const hasSymbol = symbolsElement.checked;
-  resultElement.innerText = generatePassword(hasLower , hasUpper , hasNumber , hasSymbol , length);
+  resultElement.innerText = generatePassword(hasUpper , hasLower , hasNumber , hasSymbol , length);
 })
 
 const generatePassword = (upper, lower , number, symbol, length) => {
