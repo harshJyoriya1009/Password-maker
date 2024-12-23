@@ -63,9 +63,9 @@ generateElement.addEventListener("click", () => {
   resultElement.innerText = generatePassword(hasLower , hasUpper , hasNumber , hasSymbol , length);
 })
 
-const generatePassword = (upper, lower , symbol, number, length) => {
+const generatePassword = (upper, lower , number, symbol, length) => {
   let generatedPassword = "";
-  const typesCount = upper + lower + symbol + number;
+  const typesCount = upper + lower + number + symbol;
   const typesArr = [{ upper }, { lower }, { symbol }, { number }].filter(
     (item) => Object.values(item)[0]
   );
