@@ -38,14 +38,20 @@ Follow these steps to get the project up and running on your local machine:
 3. **Open the index.html file in your web browser: Simply double-click the index.html file or open it via your text editor and launch it in the browser.No server setup is required. This project is fully client-side and works out of the box.
 
    **Project Structure
-The project contains the following files:
-```bash
+**The project contains the following files:
+  ```bash
 password-maker/
 │
 ├── index.html          # HTML file containing the structure of the Password Maker
 ├── style.css           # Styles for the Password Maker
 ├── script2.js          # JavaScript logic for generating the password
 └── README.md           # Documentation about the project
+```
 
+1. index.html
+This file defines the structure of the Password Maker interface. It includes:
 
+A password display area.
+Options to select the password length and type of characters to include.
+A button to generate the password and another to copy the password to the clipboard.
 
